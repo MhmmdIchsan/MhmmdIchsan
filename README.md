@@ -125,7 +125,7 @@ My experience spans building scalable backend systems, full-stack web applicatio
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏢 E-Booking Room System</h3>
+      <h3>🏢 SENYUM - Sistem Nyaman Untuk Meeting</h3>
       <p>Web-based meeting room reservation system for institutions and offices with real-time availability tracking.</p>
       <p>
         <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white"/>
@@ -157,13 +157,8 @@ My experience spans building scalable backend systems, full-stack web applicatio
     </td>
     <td width="50%" valign="top">
       <h3>🔨 Ongoing Projects</h3>
-      <p><strong>🧪 SIPLAB</strong> — Laboratory assistant management, attendance & scheduling system.</p>
-      <p><strong>📄 SIMATA</strong> — Final project monitoring system for tracking thesis progress with PDF report generation.</p>
-      <p>
-        <img src="https://img.shields.io/badge/CodeIgniter-EF4223?style=flat-square&logo=codeigniter&logoColor=white"/>
-        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-      </p>
+      <p><strong>🧪 Belanja.in</strong> — E-Commerce System With Payment Gateway</p>
+      <p><strong>📄 SIMS</strong> — Sistem Informasi Manajemen Sekolah</p>
     </td>
   </tr>
 </table>
@@ -191,20 +186,6 @@ My experience spans building scalable backend systems, full-stack web applicatio
 
 ---
 
-## 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MhmmdIchsan/MhmmdIchsan/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MhmmdIchsan/MhmmdIchsan/output/github-snake.svg" />
-    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/MhmmdIchsan/MhmmdIchsan/output/github-snake.svg" />
-  </picture>
-</div>
-
-> ⚠️ **Note:** Snake animation requires GitHub Actions setup. See [instructions below](#setup-snake-animation).
-
----
-
 ## 💡 Philosophy
 
 <div align="center">
@@ -224,39 +205,3 @@ My experience spans building scalable backend systems, full-stack web applicatio
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,100:0d1117&height=100&section=footer" />
 
 ---
-
-<details>
-<summary>⚙️ Setup Snake Animation</summary>
-
-To enable the contribution snake animation, create this GitHub Actions workflow at `.github/workflows/snake.yml` in your profile repository:
-
-```yaml
-name: Generate Snake Animation
-
-on:
-  schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-</details>
